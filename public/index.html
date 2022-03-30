@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+
+        <link rel="stylesheet" href="./index.css" />
+        <title>Task Manager</title>
+    </head>
+    <body>
+        <main>
+            <form class="task-form">
+                <h4>pgasz task manager</h4>
+                <div class="form-control">
+                    <input
+                        type="text"
+                        name="name"
+                        class="task-input"
+                        placeholder="your task"
+                    />
+                    <button type="submit" class="btn submit-btn">submit</button>
+                </div>
+                <div class="form-alert"></div>
+            </form>
+            <section class="tasks-container">
+                <p class="loading-text">Loading...</p>
+                <div class="tasks"></div>
+            </section>
+
+            <section class="edit-container">
+                <div class="container">
+                    <form class="single-task-form">
+                        <h4>Edit Task</h4>
+                        <div class="form-control">
+                            <label>Task ID</label>
+                            <p class="task-edit-id"></p>
+                        </div>
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                class="task-edit-name"
+                            />
+                        </div>
+                        <div class="form-control">
+                            <label for="completed">completed</label>
+                            <input
+                                type="checkbox"
+                                name="completed"
+                                class="task-edit-completed"
+                            />
+                        </div>
+                        <button type="submit" class="block btn task-edit-btn">
+                            edit
+                        </button>
+                        <div class="form-alert"></div>
+                        <button
+                            type="button"
+                            id="back-to-tasks"
+                            class="btn back-link"
+                        >
+                            back to tasks
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <script src="./browser-app.js"></script>
+    </body>
+</html>
