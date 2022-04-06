@@ -9,7 +9,7 @@ require('dotenv').config();
 // POST '/tasks          --> create a new task
 // GET '/tasks/:id'      -->  get single task
 // PATCH '/tasks/:id'    -->  update single task
-// DELETE '/tasks/:id'   --> delete task\
+// DELETE '/tasks/:id'   --> delete task
 
 app.use(express.static('./public'));
 app.use(express.urlencoded({ extended: false }));
